@@ -1,3 +1,9 @@
+//
+//  SceneDelegate.swift
+//  Practice-Swift
+//
+//  Created by 生野琢郎 on 2023/07/23.
+//
 
 import UIKit
 
@@ -11,6 +17,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        // UIWindowsScene型で会った場合実行される
+        if let windowScene = scene as? UIWindowScene {
+            let window = UIWindow(windowScene: windowScene)
+            window.rootViewController = ViewController.init()
+            self.window = window
+            window.makeKeyAndVisible()
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

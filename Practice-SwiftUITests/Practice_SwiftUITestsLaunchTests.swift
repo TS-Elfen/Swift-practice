@@ -1,7 +1,13 @@
+//
+//  Practice_SwiftUITestsLaunchTests.swift
+//  Practice-SwiftUITests
+//
+//  Created by 生野琢郎 on 2023/07/23.
+//
 
 import XCTest
 
-final class TodayUITestsLaunchTests: XCTestCase {
+final class Practice_SwiftUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
